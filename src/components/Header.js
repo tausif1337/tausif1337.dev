@@ -1,23 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 
 function Header() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className="header">
       <div className="logo">
         <h1>@tausif1337</h1>
       </div>
-      <nav className="nav">
+      <button className="mobile-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        ☰
+      </button>
+      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <Link to="about" smooth={true} duration={500} offset={-70} className="nav-link">
           About
         </Link>
@@ -36,7 +31,8 @@ function Header() {
       </nav>
       <div className="cta">
         <a
-          href="../assets/tausif1337.pdf"
+          href="/assets/tausif1337.pdf"
+          download="tausif1337.pdf"  // This attribute ensures downloading as a file
           target="_blank"
           rel="noopener noreferrer"
           className="download-btn"
