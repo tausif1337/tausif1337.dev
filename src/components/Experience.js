@@ -6,18 +6,17 @@ function Experience() {
       <h2>Experience</h2>
       <div className="experience-timeline">
         <div className="timeline-item">
-          <h3>Software Engineer</h3>
-          <p>ABC Corporation</p>
-          <span>2020 - Present</span>
-          <p>Developed and maintained complex web applications, ensuring high performance and responsive design.</p>
+          <h3>Founding Member, Tech Lead, Sr. Full-Stack Software Engineer</h3>
+          <p>DevTechGuru</p>
+          <span>Nov 2021 - Present</span>
+          <p>Led a team to deliver cutting-edge software solutions, collaborated with cross-functional teams, and successfully implemented high-profile projects that boosted revenue and customer satisfaction.</p>
         </div>
         <div className="timeline-item">
-          <h3>Frontend Developer</h3>
-          <p>XYZ Ltd.</p>
-          <span>2018 - 2020</span>
-          <p>Focused on building reusable components and front-end libraries for future use, improving overall user experience.</p>
+          <h3>Software Engineer Intern</h3>
+          <p>DataSoft Systems Bangladesh Limited</p>
+          <span>Feb 2021 - May 2021</span>
+          <p>Developed a responsive web presence and built a facial-recognition-based attendance management system.</p>
         </div>
-        {/* Add more timeline items as needed */}
       </div>
     </section>
   );
