@@ -1,11 +1,10 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import profilePicture from '../assets/tausif1337.jpg';
 
 function Hero() {
   return (
     <section className="hero">
-      <img src={profilePicture} alt="Md. Tausif Hossain" className="profile-pic" />
+      <img src="/assets/tausif1337.jpg" alt="Md. Tausif Hossain" className="profile-pic" />
       <div className="hero-text">
         <h1>Md. Tausif Hossain</h1>
         <p>Technical Leader - Bridging Business Goals and Technology Excellence</p>
