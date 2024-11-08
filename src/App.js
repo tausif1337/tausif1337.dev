@@ -40,7 +40,7 @@ function App() {
       <Routes>
         {/* Main Page Layout */}
         <Route path="/" element={<HomePage />} />
-        
+
         {/* Separate Project Pages */}
         <Route path="/implant-support-system" element={<ImplantSupportSystem />} />
         <Route path="/smart-parking-system" element={<SmartParkingSystem />} />
