@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import healthcareIcon from './assets/projects/healthcareAI.webp';
 import parkingIcon from './assets/projects/parkingAI.webp';
 import labIcon from './assets/projects/lims.webp';
@@ -17,8 +18,7 @@ function Projects() {
         "A system aiding doctors in implant decisions by automating X-ray image analysis and providing key trial implant insights.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: healthcareIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/implant-support-system"
     },
     {
       title: "Smart Parking Mgmt System",
@@ -28,8 +28,7 @@ function Projects() {
         "Digital solution for optimizing parking operations, allowing efficient reservation, payment, and availability tracking.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: parkingIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/smart-parking-system"
     },
     {
       title: "Face-Recognition Attendance System",
@@ -39,8 +38,7 @@ function Projects() {
         "An advanced software that uses facial recognition to simplify attendance management for institutions and companies.",
       associatedWith: "DataSoft Systems Bangladesh Ltd.",
       imageUrl: faceRecognitionIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/face-recognition-attendance"
     },
     {
       title: "Laboratory Info Mgmt System",
@@ -50,20 +48,17 @@ function Projects() {
         "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: labIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/lab-management-system"
     },
-    
     {
       title: "Enterprise Resource Planning System",
       developedFor: "Multiple Local and Foreign Companies",
-      techUsed: "Laravel",
+      techUsed: "React, Laravel",
       description:
         "Web platform that integrates business processes, enhancing efficiency and seamless data handling across departments.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: erpIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/erp-system"
     },
     {
       title: "Content Mgmt System",
@@ -73,8 +68,7 @@ function Projects() {
         "User-centric platform for effortless creation, editing, organization, and publishing of digital content on sites/apps.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: cmsIcon,
-      githubLink: "",
-      liveLink: ""
+      pageLink: "/cms-system"
     }
   ];
 
@@ -92,16 +86,9 @@ function Projects() {
               <p className="project-description">{project.description}</p>
               <p><strong>Associated With:</strong> {project.associatedWith}</p>
               <div className="project-links">
-                {project.githubLink && (
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <FaGithub /> GitHub
-                  </a>
-                )}
-                {project.liveLink && (
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
-                    <FaExternalLinkAlt /> Live Demo
-                  </a>
-                )}
+                <Link to={project.pageLink} className="project-link">
+                  <FaExternalLinkAlt /> Project Details
+                </Link>
               </div>
             </div>
           </div>
