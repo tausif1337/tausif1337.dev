@@ -10,55 +10,55 @@ import cmsIcon from './assets/projects/cms-icon.svg';
 function Projects() {
   const projectData = [
     {
-      title: "Intelligent Implant Decision Support System",
+      title: "Intelligent Implant Support System",
       developedFor: "Avail Ortho, a US-based startup focusing on Health AI",
-      techUsed: "Django, Python, SQLite, JavaScript, jQuery, Bootstrap, HTML, CSS",
+      techUsed: "React & Django",
       description:
-        "This system assists orthopedic doctors in making informed decisions about implants by automating the identification and segmentation of objects in X-ray images. By providing insights into trial implant length and offset, it enhances the overall medical diagnostics process.",
+        "A system aiding doctors in implant decisions by automating X-ray image analysis and providing key trial implant insights.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: healthcareIcon,
       githubLink: "https://github.com/tausif1337/intelligent-implant-system",
       liveLink: "https://availortho.com/demo"
     },
     {
-      title: "DTG Smart Parking Management System",
+      title: "Smart Parking Management System",
       developedFor: "Sun Moon Star Tower",
-      techUsed: "Django, Python, SQLite, JavaScript, jQuery, Bootstrap, HTML, CSS",
+      techUsed: "React & Django",
       description:
-        "A comprehensive digital solution tailored to optimize parking operations within buildings and complexes, offering an intuitive platform for tenants and visitors to manage parking reservations, payments, and real-time availability efficiently.",
+        "Digital solution for optimizing parking operations, allowing efficient reservation, payment, and availability tracking.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: parkingIcon,
       githubLink: "https://github.com/tausif1337/smart-parking",
       liveLink: "https://smartparking.devtechguru.com"
     },
     {
-      title: "Laboratory Information Management System (LIMS)",
+      title: "Laboratory Info Mgmt System (LIMS)",
       developedFor: "Wyss Institute, Harvard University",
-      techUsed: "Laravel, PHP, SQL, JavaScript, jQuery, AJAX, Bootstrap, HTML, CSS",
+      techUsed: "Laravel",
       description:
-        "LIMS helps streamline sample management, automate workflows, ensure data integrity, and enhance overall efficiency in research and testing facilities.",
+        "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: labIcon,
       githubLink: "https://github.com/tausif1337/lims",
       liveLink: "https://lims.wyss.harvard.edu"
     },
     {
-      title: "Facial-Recognition Based Attendance Management System",
+      title: "Face-Recognition Attendance System",
       developedFor: "Yoga Chandrima",
-      techUsed: "Face API, PHP, SQL, JavaScript, Bootstrap, HTML, CSS",
+      techUsed: "AI, Python",
       description:
-        "A sophisticated software solution that uses facial recognition technology to streamline attendance tracking and management for businesses and institutions.",
+        "An advanced software that uses facial recognition to simplify attendance management for institutions and companies.",
       associatedWith: "DataSoft Systems Bangladesh Ltd.",
       imageUrl: faceRecognitionIcon,
       githubLink: "https://github.com/tausif1337/attendance-system",
       liveLink: "https://attendance.yogachandrima.com"
     },
     {
-      title: "Enterprise Resource Planning (ERP) System",
+      title: "Enterprise Resource Planning System",
       developedFor: "Multiple Local and Foreign Companies",
-      techUsed: "Laravel, PHP, SQL, JavaScript, jQuery, AJAX, Bootstrap, HTML, CSS",
+      techUsed: "Laravel",
       description:
-        "A comprehensive web solution that integrates and streamlines various business processes and functions within an organization, enhancing efficiency and data management across different departments.",
+        "Web platform that integrates business processes, enhancing efficiency and seamless data handling across departments.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: erpIcon,
       githubLink: "https://github.com/tausif1337/erp-system",
@@ -67,9 +67,9 @@ function Projects() {
     {
       title: "Content Management System (CMS)",
       developedFor: "QK Ahmad Foundation",
-      techUsed: "PHP, SQL, JavaScript, jQuery, AJAX, Bootstrap, HTML, CSS",
+      techUsed: "Laravel",
       description:
-        "A user-friendly web platform that enables easy creation, editing, organization, and publishing of digital content, such as text, images, and videos, on a website or application.",
+        "User-centric platform for effortless creation, editing, organization, and publishing of digital content on sites/apps.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: cmsIcon,
       githubLink: "https://github.com/tausif1337/cms",
