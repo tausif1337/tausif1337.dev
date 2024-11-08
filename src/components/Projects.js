@@ -1,58 +1,59 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import healthcareIcon from './assets/projects/healthcare-icon.svg';
-import parkingIcon from './assets/projects/parking-icon.svg';
-import labIcon from './assets/projects/lab-icon.svg';
-import faceRecognitionIcon from './assets/projects/face-recognition-icon.svg';
-import erpIcon from './assets/projects/erp-icon.svg';
-import cmsIcon from './assets/projects/cms-icon.svg';
+import healthcareIcon from './assets/projects/healthcareAI.webp';
+import parkingIcon from './assets/projects/parkingAI.webp';
+import labIcon from './assets/projects/lims.webp';
+import faceRecognitionIcon from './assets/projects/face-recognition.webp';
+import erpIcon from './assets/projects/erp.webp';
+import cmsIcon from './assets/projects/cms.webp';
 
 function Projects() {
   const projectData = [
     {
       title: "Intelligent Implant Support System",
       developedFor: "Avail Ortho, a US-based startup focusing on Health AI",
-      techUsed: "React & Django",
+      techUsed: "AI, React, Django",
       description:
         "A system aiding doctors in implant decisions by automating X-ray image analysis and providing key trial implant insights.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: healthcareIcon,
-      githubLink: "https://github.com/tausif1337/intelligent-implant-system",
-      liveLink: "https://availortho.com/demo"
+      githubLink: "",
+      liveLink: ""
     },
     {
-      title: "Smart Parking Management System",
+      title: "Smart Parking Mgmt System",
       developedFor: "Sun Moon Star Tower",
-      techUsed: "React & Django",
+      techUsed: "AI, React, Django",
       description:
         "Digital solution for optimizing parking operations, allowing efficient reservation, payment, and availability tracking.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: parkingIcon,
-      githubLink: "https://github.com/tausif1337/smart-parking",
-      liveLink: "https://smartparking.devtechguru.com"
-    },
-    {
-      title: "Laboratory Info Mgmt System (LIMS)",
-      developedFor: "Wyss Institute, Harvard University",
-      techUsed: "Laravel",
-      description:
-        "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.",
-      associatedWith: "DevTechGuru Ltd.",
-      imageUrl: labIcon,
-      githubLink: "https://github.com/tausif1337/lims",
-      liveLink: "https://lims.wyss.harvard.edu"
+      githubLink: "",
+      liveLink: ""
     },
     {
       title: "Face-Recognition Attendance System",
       developedFor: "Yoga Chandrima",
-      techUsed: "AI, Python",
+      techUsed: "AI, React, Django",
       description:
         "An advanced software that uses facial recognition to simplify attendance management for institutions and companies.",
       associatedWith: "DataSoft Systems Bangladesh Ltd.",
       imageUrl: faceRecognitionIcon,
-      githubLink: "https://github.com/tausif1337/attendance-system",
-      liveLink: "https://attendance.yogachandrima.com"
+      githubLink: "",
+      liveLink: ""
     },
+    {
+      title: "Laboratory Info Mgmt System",
+      developedFor: "Wyss Institute, Harvard University",
+      techUsed: "React, Django",
+      description:
+        "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.",
+      associatedWith: "DevTechGuru Ltd.",
+      imageUrl: labIcon,
+      githubLink: "",
+      liveLink: ""
+    },
+    
     {
       title: "Enterprise Resource Planning System",
       developedFor: "Multiple Local and Foreign Companies",
@@ -61,19 +62,19 @@ function Projects() {
         "Web platform that integrates business processes, enhancing efficiency and seamless data handling across departments.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: erpIcon,
-      githubLink: "https://github.com/tausif1337/erp-system",
-      liveLink: "https://erp.demo.devtechguru.com"
+      githubLink: "",
+      liveLink: ""
     },
     {
-      title: "Content Management System (CMS)",
+      title: "Content Mgmt System",
       developedFor: "QK Ahmad Foundation",
-      techUsed: "Laravel",
+      techUsed: "React, Django",
       description:
         "User-centric platform for effortless creation, editing, organization, and publishing of digital content on sites/apps.",
       associatedWith: "DevTechGuru Ltd.",
       imageUrl: cmsIcon,
-      githubLink: "https://github.com/tausif1337/cms",
-      liveLink: "https://cms.qkahmadfoundation.com"
+      githubLink: "",
+      liveLink: ""
     }
   ];
 
