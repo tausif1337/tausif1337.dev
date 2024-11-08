@@ -103,7 +103,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
   border-radius: 15px;
   text-align: center;
   overflow: hidden;
@@ -241,15 +241,6 @@ body {
 .timeline-item span {
   color: #888;
   font-size: 0.9em;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  background: #1a202c;
-  color: white;
-  padding: 20px;
-  margin-top: 20px;
 }
 
 /* Responsive Styling */

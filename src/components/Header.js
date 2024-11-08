@@ -3,22 +3,12 @@ import { Link } from 'react-scroll';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
-
   return (
     <header className="header">
       <div className="logo">
         <h1>@tausif1337</h1>
       </div>
-      <button
-        className="mobile-menu"
-        onClick={handleMenuToggle}
-        aria-label="Toggle navigation menu"
-        aria-expanded={isMenuOpen}
-      >
-        ☰
-      </button>
+
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         {['about', 'skills', 'experience', 'projects', 'contact'].map((section) => (
           <Link

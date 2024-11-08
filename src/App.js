@@ -7,12 +7,13 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import ImplantSupportSystem from './pages/ImplantSupportSystem';
-import SmartParkingSystem from './pages/SmartParkingSystem';
-import FaceRecognitionAttendance from './pages/FaceRecognitionAttendance';
-import LabManagementSystem from './pages/LabManagementSystem';
-import ERPSystem from './pages/ERPSystem';
-import CMSSystem from './pages/CMSSystem';
+import Footer from './components/Footer';
+import ImplantSupportSystem from './projects/ImplantSupportSystem';
+import SmartParkingSystem from './projects/SmartParkingSystem';
+import FaceRecognitionAttendance from './projects/FaceRecognitionAttendance';
+import LabManagementSystem from './projects/LabManagementSystem';
+import ERPSystem from './projects/ERPSystem';
+import CMSSystem from './projects/CMSSystem';
 import './styles.css';
 
 function HomePage() {
@@ -27,9 +28,7 @@ function HomePage() {
         <Projects />
         <Contact />
       </div>
-      <footer className="footer">
-        <p>&copy; 2025 Md. Tausif Hossain. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
