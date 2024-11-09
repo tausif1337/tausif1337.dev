@@ -11,7 +11,6 @@ function ERPSystem() {
         <section className="hero">
           <h1>Centralize Your Business Processes</h1>
           <p>A comprehensive ERP solution for seamless departmental integration.</p>
-          <button className="cta-button">Get Started Today</button>
         </section>
         <section className="overview">
           <h2>Project Overview</h2>

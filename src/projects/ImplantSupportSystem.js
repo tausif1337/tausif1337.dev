@@ -11,7 +11,6 @@ function ImplantSupportSystem() {
         <section className="hero">
           <h1>Revolutionizing Orthopedic Implants</h1>
           <p>Automated AI-powered X-ray analysis for better implant decision-making.</p>
-          <button className="cta-button">Discover More</button>
         </section>
         <section className="overview">
           <h2>Project Overview</h2>

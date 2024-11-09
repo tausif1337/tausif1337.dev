@@ -13,7 +13,7 @@ function Hero() {
       <div className="hero-text">
         <h1 className="hero-title">Md. Tausif Hossain</h1>
         <p className="hero-subtitle">
-          Full-Stack Software Engineer | Technical Lead | Problem Solver
+          Technical Leader - Bridging Business Goals and Technology Excellence
         </p>
         <p className="hero-summary">
           Experienced in building scalable web and mobile solutions with a proven track record of optimizing performance and user experience.

@@ -11,7 +11,6 @@ function CMSSystem() {
         <section className="hero">
           <h1>Manage Content with Ease</h1>
           <p>Create, edit, and publish your digital content effortlessly.</p>
-          <button className="cta-button">Try Now</button>
         </section>
         <section className="overview">
           <h2>Project Overview</h2>

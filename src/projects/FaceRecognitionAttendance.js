@@ -11,7 +11,6 @@ function FaceRecognitionAttendance() {
         <section className="hero">
           <h1>Effortless Attendance with Face Recognition</h1>
           <p>Simplifying attendance management for institutions and companies.</p>
-          <button className="cta-button">Request a Demo</button>
         </section>
         <section className="overview">
           <h2>Project Overview</h2>

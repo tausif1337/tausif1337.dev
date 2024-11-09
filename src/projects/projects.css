@@ -10,16 +10,7 @@
     margin-bottom: 40px;
   }
   
-  .cta-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  .overview, .benefits, .footer {
+  .overview, .benefits {
     margin-bottom: 30px;
   }
   
@@ -32,3 +23,7 @@
     text-align: center;
   }
   
+
+  h3 {
+    margin-top: 30px;
+  }

@@ -11,7 +11,6 @@ function LabManagementSystem() {
         <section className="hero">
           <h1>Streamline Your Lab Operations</h1>
           <p>Enhance sample tracking, data management, and workflow automation.</p>
-          <button className="cta-button">Learn More</button>
         </section>
         <section className="overview">
           <h2>Project Overview</h2>
