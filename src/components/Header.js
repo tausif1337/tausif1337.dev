@@ -10,7 +10,7 @@ function Header() {
       </div>
 
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-        {['about', 'skills', 'experience', 'projects', 'contact'].map((section) => (
+        {['home','about', 'skills', 'experience', 'projects', 'contact', 'blog'].map((section) => (
           <Link
             key={section}
             to={section}
