@@ -10,9 +10,10 @@ import {
   FaDocker,
   FaAws,
   FaDatabase,
-  FaJsSquare
+  FaJsSquare,
+  FaBootstrap
 } from 'react-icons/fa';
-import { SiDjango, SiLaravel, SiTailwindcss, SiJquery } from 'react-icons/si';
+import { SiDjango, SiLaravel, SiJquery } from 'react-icons/si';
 
 function Skills() {
   return (
@@ -60,8 +61,8 @@ function Skills() {
           <h3>CSS3</h3>
         </div>
         <div className="card">
-          <SiTailwindcss size={40} color="#06B6D4" />
-          <h3>Tailwind CSS</h3>
+          <FaBootstrap size={40} color="#06B6D4" />
+          <h3>Bootstrap</h3>
         </div>
         <div className="card">
           <FaDatabase size={40} color="#F29111" />

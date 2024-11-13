@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import healthcareIcon from './assets/projects/healthcareAI.webp';
-import parkingIcon from './assets/projects/parkingAI.webp';
-import labIcon from './assets/projects/lims.webp';
-import faceRecognitionIcon from './assets/projects/face-recognition.webp';
-import erpIcon from './assets/projects/erp.webp';
-import cmsIcon from './assets/projects/cms.webp';
+import healthcareIcon from './assets/images/healthcareAI.webp';
+import parkingIcon from './assets/images/parkingAI.webp';
+import labIcon from './assets/images/lims.webp';
+import faceRecognitionIcon from './assets/images/face-recognition.webp';
+import erpIcon from './assets/images/erp.webp';
+import cmsIcon from './assets/images/cms.webp';
+import './assets/styles/Projects.css'; // Ensure this file exists and is correctly styled
 
 function Projects() {
   const projectData = [

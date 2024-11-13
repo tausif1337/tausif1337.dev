@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import './projects.css'; // Custom CSS for styling
+import Header from '../../components/Header';
+import Footer from '../../components/Footer/Footer';
+import './assets/styles/projects.css'; // Custom CSS for styling
 
 function SmartParkingSystem() {
   return (

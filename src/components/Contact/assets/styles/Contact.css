@@ -1,0 +1,88 @@
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-info p:hover {
+    background-color: #e8f0fe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info a {
+    color: #4e54c8;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .contact-info a:hover {
+    color: #4e54c8;
+  }
+  
+  /* Icon Styling */
+  .contact-info svg {
+    margin-right: 10px;
+    color: #4e54c8;
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      padding: 30px 15px;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .contact-info p {
+      font-size: 0.95rem;
+      padding: 8px;
+    }
+  
+    .contact-info svg {
+      font-size: 1.3rem;
+      margin-right: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section {
+      padding: 20px 10px;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .contact-info p {
+      font-size: 0.875rem;
+      flex-direction: column; /* Stack text and icon vertically */
+      align-items: flex-start;
+    }
+  
+    .contact-info a {
+      margin-left: 0;
+      margin-top: 5px; /* Space between text and link */
+    }
+  
+    .contact-info svg {
+      font-size: 1.2rem;
+      margin-bottom: 5px; /* Space between icon and text */
+    }
+  }
+  

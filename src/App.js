@@ -5,40 +5,41 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ImplantSupportSystem from './projects/ImplantSupportSystem';
-import SmartParkingSystem from './projects/SmartParkingSystem';
-import FaceRecognitionAttendance from './projects/FaceRecognitionAttendance';
-import LabManagementSystem from './projects/LabManagementSystem';
-import ERPSystem from './projects/ERPSystem';
-import CMSSystem from './projects/CMSSystem';
-import './styles.css';
-
-function HomePage() {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <div className="container">
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </div>
-      <Footer />
-    </div>
-  );
-}
+import Projects from './components/Projects/Projects';
+import Blog from './components/Blog/Blog';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import ImplantSupportSystem from './pages/Project/ImplantSupportSystem';
+import SmartParkingSystem from './pages/Project/SmartParkingSystem';
+import FaceRecognitionAttendance from './pages/Project/FaceRecognitionAttendance';
+import LabManagementSystem from './pages/Project/LabManagementSystem';
+import ERPSystem from './pages/Project/ERPSystem';
+import CMSSystem from './pages/Project/CMSSystem';
+import './assets/styles/global.css';
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* Main Page Layout */}
-        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Hero />
+              <div className="container">
+                <About />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Blog />
+                <Contact />
+              </div>
+              <Footer />
+            </>
+          }
+        />
 
         {/* Separate Project Pages */}
         <Route path="/implant-support-system" element={<ImplantSupportSystem />} />
