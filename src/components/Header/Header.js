@@ -23,24 +23,12 @@ function Header() {
         <span className="menu-icon"></span>
       </button>
 
-      {/* Center container for logo and download button */}
-      <div className="center-container">
-        <div className="logo" onClick={handleLogoClick}>
-          <h1>@tausif1337</h1>
-        </div>
-        <div className="cta">
-          <a
-            href={cv}
-            download="tausif1337.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="download-btn"
-          >
-            Download CV
-          </a>
-        </div>
+      {/* Logo */}
+      <div className="logo" onClick={handleLogoClick}>
+        <h1>@tausif1337</h1>
       </div>
 
+      {/* Navigation Menu */}
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         {['home', 'about', 'skills', 'experience', 'projects', 'contact', 'blog'].map((section) => (
           <div key={section}>
@@ -63,6 +51,19 @@ function Header() {
           </div>
         ))}
       </nav>
+
+      {/* CTA Button for Download CV */}
+      <div className="cta">
+        <a
+          href={cv}
+          download="tausif1337.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="download-btn"
+        >
+          Download CV
+        </a>
+      </div>
     </header>
   );
 }
