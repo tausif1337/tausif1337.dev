@@ -21,24 +21,6 @@ body {
   padding: 20px;
 }
 
-/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-}
-
-.header.scrolled {
-  background-color: #ffffff;
-}
-
 .logo h1 {
   font-size: 1.8em;
   color: #4e54c8;
@@ -249,11 +231,6 @@ body {
 
 /* Responsive Styling */
 @media (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-    padding: 15px 30px;
-  }
-
   .nav {
     flex-direction: column;
     display: none;
@@ -315,10 +292,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .header {
-    padding: 10px 20px;
-  }
-
   .profile-pic {
     width: 100px;
     height: 100px;

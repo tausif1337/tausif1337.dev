@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import './assets/styles/projects.css'; // Custom CSS for styling
 
