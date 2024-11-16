@@ -26,6 +26,38 @@
   align-items: center;
 }
 
+/* Navigation Links Styling */
+.nav .nav-link {
+  font-size: 18px;
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #4e54c8;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hover color change (optional) */
+.nav .nav-link:hover {
+  color: #4e54c8;
+}
+
+
 /* CTA Button */
 /* .cta {
   flex: 1;
@@ -124,7 +156,7 @@
   /* .logo {
     display: block;
   } */
-/* 
+  /* 
   .cta {
     display: block;
     margin-top: 10px;
