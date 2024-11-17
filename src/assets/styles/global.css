@@ -153,12 +153,14 @@ body {
 
 /* Sections */
 .section {
-  padding: 40px 0;
+  padding: 2rem 1rem;
+  background-color: #f7f8fa;
 }
 
 .section h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
   text-align: justify;
 }
 
@@ -178,55 +180,26 @@ body {
   flex-direction: column;
   align-items: center;
   background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ensure at least 3 items fit */
-  gap: 20px;
-  justify-content: center;
-}
-
-/* Experience Timeline */
-.experience-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.timeline-item {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.timeline-item:hover {
-  transform: translateY(-5px);
-}
-
-.timeline-item h3 {
-  font-size: 1.3em;
-}
-
-.timeline-item p {
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
   color: #555;
 }
 
-.timeline-item span {
-  color: #888;
-  font-size: 0.9em;
+.card svg {
+  margin-bottom: 10px;
 }
 
 /* Responsive Styling */
@@ -250,10 +223,6 @@ body {
     font-size: 0.9em;
     max-width: 500px;
   }
-
-  .skills-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 @media (max-width: 768px) {
@@ -274,14 +243,10 @@ body {
     max-width: 400px;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .nav-link {
     font-size: 0.95em;
   }
-  
+
   .social-icon {
     font-size: 1.5em;
   }
@@ -308,19 +273,6 @@ body {
   .hero-summary {
     font-size: 0.75em;
     max-width: 300px;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .timeline-item h3 {
-    font-size: 1.1em;
-  }
-
-  .timeline-item p {
-    font-size: 0.85em;
   }
 
   .nav-link {

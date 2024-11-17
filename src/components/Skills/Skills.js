@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import "./assets/styles/Skills.css";
+
 import {
   FaReact,
   FaHtml5,
@@ -11,9 +13,9 @@ import {
   FaAws,
   FaDatabase,
   FaJsSquare,
-  FaBootstrap
-} from 'react-icons/fa';
-import { SiDjango, SiLaravel, SiJquery } from 'react-icons/si';
+  FaBootstrap,
+} from "react-icons/fa";
+import { SiDjango, SiLaravel, SiJquery } from "react-icons/si";
 
 function Skills() {
   return (

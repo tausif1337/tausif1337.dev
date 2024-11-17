@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaPhone, FaWhatsapp, FaLinkedin } from 'react-icons/fa'; // Import relevant icons
-import './assets/styles/Contact.css'; // Ensure this file exists and is correctly styled
+import './assets/styles/Contact.css'; 
 
 function Contact() {
   return (
