@@ -32,7 +32,7 @@ function Footer() {
             <FaTwitter className="social-icon" />
           </a>
         </div>
-        <p>&copy; 2024 Tausif. All rights reserved.</p>
+        <p>&copy; 2077 - Tausif</p>
       </div>
     </footer>
   );
