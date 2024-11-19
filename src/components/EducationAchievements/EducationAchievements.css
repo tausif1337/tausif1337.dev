@@ -2,35 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between; /* Ensures spacing between items */
 }
 
-.eca-section {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #ccc;
-  background-color: #f8f9fa;
-  border-radius: 15px;
-  margin: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.eca-card {
+  flex: 1 1 300px; /* Adjusts to at least 300px, scales as needed */
+  margin: 10px;
+  box-sizing: border-box;
 }
-
-.eca-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #333;
-  text-align: justify;
-}
-
-.eca-section h2::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #4e54c8;
-  margin-top: 10px;
-  border-radius: 3px;
-}
-
 
 .eca-card-title {
   font-size: 1.6rem;
@@ -38,7 +17,8 @@
   margin-bottom: 5px;
 }
 
-.eca-card-subtitle, .eca-card-duration {
+.eca-card-subtitle,
+.eca-card-duration {
   font-size: 1rem;
   color: #7f8c8d;
   margin: 5px 0;
@@ -50,14 +30,51 @@
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .eca-card {
+    flex: 1 1 45%; /* Adjusts to two cards per row on medium-large screens */
+  }
+  .eca-card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .eca-card {
+    flex: 1 1 48%; /* Adjusts to two cards per row on medium screens */
+  }
   .eca-card-title {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .eca-card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+  .eca-card-title {
+    font-size: 1.2rem;
   }
   .eca-card-description {
     font-size: 0.9rem;
   }
   .eca-section {
-    padding: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .eca-card-title {
+    font-size: 1.1rem;
+  }
+  .eca-card-subtitle,
+  .eca-card-duration {
+    font-size: 0.9rem;
+  }
+  .eca-card-description {
+    font-size: 0.8rem;
+  }
+  .eca-section {
+    padding: 10px;
   }
 }

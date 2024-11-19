@@ -153,6 +153,11 @@ body {
 
 /* Sections */
 .section {
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 10px;
   padding: 2rem 1rem;
   background-color: #f7f8fa;
 }

@@ -4,7 +4,7 @@ import './EducationAchievements.css';
 const Education = () => {
   const education = [
     {
-      name: "Bachelor of Science in Computer Science and Engineering",
+      name: "B.Sc in Computer Science and Engineering ",
       institution: "Independent University, Bangladesh",
       duration: "2016 - 2021",
       description: "Specialized in software engineering, algorithms, and data structures."
@@ -12,7 +12,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="eca-section">
+    <section className="section">
       <h2>Education</h2>
       <div className="eca-grid">
         {education.map((edu, index) => (
@@ -35,13 +35,13 @@ const Achievements = () => {
       description: "Developed AR Doctor, an Augmented Reality-based system for facial analysis and skin disease detection."
     },
     {
-      name: "Annual SECS Awards 2017",
+      name: "IUB Annual SECS Awards 2017",
       description: "Recognized for outstanding project development and contributions."
     },
   ];
 
   return (
-    <section className="eca-section">
+    <section className="section">
       <h2>Achievements</h2>
       <div className="eca-grid">
         {achievements.map((ach, index) => (
