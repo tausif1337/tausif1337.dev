@@ -34,23 +34,3 @@ html, body {
   margin: 10px 0 0;
   font-size: 14px;
 }
-
-.footer-socials {
-  display: flex;
-  gap: 15px;
-}
-
-.footer-socials a {
-  color: #ffffff;
-  font-size: 24px;
-  transition: transform 0.3s, color 0.3s;
-}
-
-.footer-socials a:hover {
-  transform: scale(1.1);
-  color: #f0a500;
-}
-
-.social-icon {
-  vertical-align: middle;
-}

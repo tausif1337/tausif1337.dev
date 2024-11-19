@@ -15,10 +15,9 @@ body {
 
 /* Container */
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .logo h1 {
@@ -86,7 +85,6 @@ body {
   flex-direction: column;
   padding: 60px 20px;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
-  border-radius: 15px;
   text-align: center;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -188,7 +186,7 @@ body {
   border-radius: 12px;
   padding: 1.5rem 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 

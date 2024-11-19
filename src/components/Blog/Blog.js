@@ -34,14 +34,14 @@ function Blog() {
       excerpt: 'Accessibility is crucial for reaching all users. Learn the key principles and best practices to build inclusive web applications.',
       imageUrl: accessibilityImage
     },
-    {
-      id: 4,
-      title: 'Optimizing Web Performance with Lazy Loading',
-      author: 'Md. Tausif Hossain',
-      date: '2024-08-05',
-      excerpt: 'Improve the performance of your web applications by implementing lazy loading techniques for images and components.',
-      imageUrl: lazyLoadingImage
-    },
+    // {
+    //   id: 4,
+    //   title: 'Optimizing Web Performance with Lazy Loading',
+    //   author: 'Md. Tausif Hossain',
+    //   date: '2024-08-05',
+    //   excerpt: 'Improve the performance of your web applications by implementing lazy loading techniques for images and components.',
+    //   imageUrl: lazyLoadingImage
+    // },
     // Add more posts here to see six per row
   ];
 

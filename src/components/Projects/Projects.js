@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import healthcareIcon from './assets/images/healthcareAI.webp';
@@ -7,78 +7,99 @@ import labIcon from './assets/images/lims.webp';
 import faceRecognitionIcon from './assets/images/face-recognition.webp';
 import erpIcon from './assets/images/erp.webp';
 import cmsIcon from './assets/images/cms.webp';
-import './assets/styles/Projects.css'; 
+import './assets/styles/Projects.css';
 
 function Projects() {
   const projectData = [
     {
-      title: "Intelligent Implant Support System       ",
-      developedFor: "Avail Ortho, a US-based startup focusing on Health AI        ",
-      techUsed: "AI, React, Django                                           ",
-      description:
-        "A system aiding doctors in implant decisions by automating X-ray image analysis and providing key trial implant insights.                ",
-      associatedWith: "DevTechGuru                     ",
+      category: "Healthcare AI",
+      title: "Intelligent Implant Support System",
+      developedFor: "Avail Ortho, a US-based startup focusing on Health AI",
+      techUsed: "AI, React, Django",
+      description: "A system aiding doctors in implant decisions by automating X-ray image analysis and providing key trial implant insights.",
+      associatedWith: "DevTechGuru",
       imageUrl: healthcareIcon,
       pageLink: "/implant-support-system"
     },
     {
-      title: "Smart Parking Mgmt System                 ",
-      developedFor: "Sun Moon Star Tower                                       ",
-      techUsed: "AI, React, Django                                           ",
-      description:
-        "Digital solution for optimizing parking operations, allowing efficient reservation, payment, and availability tracking.                   ",
-      associatedWith: "DevTechGuru                     ",
+      category: "Parking Management",
+      title: "Smart Parking Mgmt System",
+      developedFor: "Sun Moon Star Tower",
+      techUsed: "AI, React, Django",
+      description: "Digital solution for optimizing parking operations, allowing efficient reservation, payment, and availability tracking.",
+      associatedWith: "DevTechGuru",
       imageUrl: parkingIcon,
       pageLink: "/smart-parking-system"
     },
     {
-      title: "Face-Recognition Attendance System        ",
-      developedFor: "Yoga Chandrima                                            ",
-      techUsed: "AI, React, Django                                           ",
-      description:
-        "An advanced software that uses facial recognition to simplify attendance management for institutions and companies.                      ",
-      associatedWith: "DataSoft.                        ",
+      category: "Attendance Systems",
+      title: "Face-Recognition Attendance System",
+      developedFor: "Yoga Chandrima",
+      techUsed: "AI, React, Django",
+      description: "An advanced software that uses facial recognition to simplify attendance management for institutions and companies.",
+      associatedWith: "DataSoft",
       imageUrl: faceRecognitionIcon,
       pageLink: "/face-recognition-attendance"
     },
     {
-      title: "Laboratory Info Mgmt System               ",
-      developedFor: "Wyss Institute, Harvard University                        ",
-      techUsed: "React, Django                                              ",
-      description:
-        "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.                    ",
-      associatedWith: "DevTechGuru                     ",
+      category: "Laboratory Management",
+      title: "Laboratory Info Mgmt System",
+      developedFor: "Wyss Institute, Harvard University",
+      techUsed: "React, Django",
+      description: "Tool for streamlining sample handling, automating workflows, ensuring data integrity, and boosting efficiency in labs.",
+      associatedWith: "DevTechGuru",
       imageUrl: labIcon,
       pageLink: "/lab-management-system"
     },
     {
-      title: "ERP System                                ",
-      developedFor: "Multiple Local and Foreign Companies                      ",
-      techUsed: "React, Laravel                                             ",
-      description:
-        "Web platform that integrates business processes, enhancing efficiency and seamless data handling across departments.                      ",
-      associatedWith: "DevTechGuru                     ",
+      category: "Business Management",
+      title: "ERP System",
+      developedFor: "Multiple Local and Foreign Companies",
+      techUsed: "React, Laravel",
+      description: "Web platform that integrates business processes, enhancing efficiency and seamless data handling across departments.",
+      associatedWith: "DevTechGuru",
       imageUrl: erpIcon,
       pageLink: "/erp-system"
     },
     {
-      title: "Content Mgmt System                       ",
-      developedFor: "QK Ahmad Foundation                                       ",
-      techUsed: "React, Django                                              ",
-      description:
-        "User-centric platform for effortless creation, editing, organization, and publishing of digital content on sites/apps.                    ",
-      associatedWith: "DevTechGuru                     ",
+      category: "Content Management",
+      title: "Content Mgmt System",
+      developedFor: "QK Ahmad Foundation",
+      techUsed: "React, Django",
+      description: "User-centric platform for effortless creation, editing, organization, and publishing of digital content on sites/apps.",
+      associatedWith: "DevTechGuru",
       imageUrl: cmsIcon,
       pageLink: "/cms-system"
     }
   ];
-  
+
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const categories = ["All", ...new Set(projectData.map(project => project.category))];
+
+  const filteredProjects = selectedCategory === "All" 
+    ? projectData 
+    : projectData.filter(project => project.category === selectedCategory);
+
   return (
     <section id="projects" className="section">
       <h2>Projects</h2>
+      <div className="category-filter">
+        <label htmlFor="category-select">Filter by Category: </label>
+        <select 
+          id="category-select" 
+          value={selectedCategory} 
+          onChange={e => setSelectedCategory(e.target.value)}
+        >
+          {categories.map((category, index) => (
+            <option key={index} value={category}>{category}</option>
+          ))}
+        </select>
+      </div>
+
       <div className="projects-grid">
-        {projectData.map((project, index) => (
-          <div className="card project-card" key={index}>
+        {filteredProjects.map((project, index) => (
+          <div className="project-card" key={index}>
             <img src={project.imageUrl} alt={project.title} className="project-image" />
             <div className="project-content">
               <h3>{project.title}</h3>

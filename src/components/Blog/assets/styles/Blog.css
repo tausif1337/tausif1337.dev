@@ -1,7 +1,7 @@
 /* Blog Posts Grid */
 .blog-posts {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Six columns */
+  grid-template-columns: repeat(3, 1fr); /* Six columns */
   gap: 24px;
   margin: 0 auto;
   padding: 20px;
@@ -93,7 +93,7 @@
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
   .blog-posts {
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    grid-template-columns: repeat(3, 1fr); /* Four columns */
   }
 }
 
