@@ -1,0 +1,63 @@
+.eca-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.eca-section {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.eca-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: justify;
+}
+
+.eca-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #4e54c8;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+
+.eca-card-title {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.eca-card-subtitle, .eca-card-duration {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.eca-card-description {
+  font-size: 1rem;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .eca-card-title {
+    font-size: 1.4rem;
+  }
+  .eca-card-description {
+    font-size: 0.9rem;
+  }
+  .eca-section {
+    padding: 20px;
+  }
+}
