@@ -28,20 +28,11 @@ function Contact() {
       <p className="intro-text">I’d love to hear from you! Whether it's a project, collaboration, or just a friendly chat, feel free to reach out.</p>
       <div className="contact-container">
         <div className="contact-info">
-          <p>
-            <FaEnvelope /> <span>Email:</span> <a href="mailto:tausif1337@gmail.com">tausif1337@gmail.com</a>
-          </p>
-          <p>
-            <FaPhone /> <span>Phone:</span> <a href="tel:+8801748181448">+8801748181448</a>
-          </p>
-          <p>
-            <FaWhatsapp /> <span>WhatsApp:</span> <a href="https://wa.me/8801748181448" target="_blank" rel="noopener noreferrer">+8801748181448</a>
-          </p>
-          <p>
-            <FaLinkedin /> <span>LinkedIn:</span> <a href="https://linkedin.com/in/tausif1337" target="_blank" rel="noopener noreferrer">linkedin.com/in/tausif1337</a>
-          </p>
+          <p><FaEnvelope /> <span>Email:</span> <a href="mailto:tausif1337@gmail.com">tausif1337@gmail.com</a></p>
+          <p><FaPhone /> <span>Phone:</span> <a href="tel:+8801748181448">+8801748181448</a></p>
+          <p><FaWhatsapp /> <span>WhatsApp:</span> <a href="https://wa.me/8801748181448" target="_blank" rel="noopener noreferrer">+8801748181448</a></p>
+          <p><FaLinkedin /> <span>LinkedIn:</span> <a href="https://linkedin.com/in/tausif1337" target="_blank" rel="noopener noreferrer">linkedin.com/in/tausif1337</a></p>
         </div>
-
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"

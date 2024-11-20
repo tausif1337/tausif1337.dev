@@ -1,3 +1,9 @@
+/* Card Styling */
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 /* Skills Grid */

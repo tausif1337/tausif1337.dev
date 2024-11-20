@@ -5,7 +5,6 @@ import './assets/styles/Blog.css';
 import jsFrameworksImage from './assets/images/js-frameworks.webp';
 import reactHooksImage from './assets/images/react-hooks.webp';
 import accessibilityImage from './assets/images/accessibility.webp';
-import lazyLoadingImage from './assets/images/lazy-loading.webp';
 
 function Blog() {
   // Static blog post data with images
