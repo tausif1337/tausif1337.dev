@@ -31,13 +31,12 @@ function Contact() {
           <p><FaPhone /> <span>Phone:</span> <a href="tel:+8801748181448">+8801748181448</a></p>
           <p><FaEnvelope /> <span>Email:</span> <a href="mailto:tausif1337@gmail.com">tausif1337@gmail.com</a></p>
           <p><FaWhatsapp /> <span>WhatsApp:</span> <a href="https://wa.me/8801748181448" target="_blank" rel="noopener noreferrer">+8801748181448</a></p>
-          <p><FaMapMarkerAlt />Narayanganj, Dhaka, Bangladesh</p>
           <div className="social-handles">
             <h4>Follow Me</h4>
             <a href="https://linkedin.com/in/tausif1337" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href="https://twitter.com/yourTwitterHandle" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="https://instagram.com/yourInstagramHandle" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://facebook.com/yourFacebookHandle" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://twitter.com/tausif1337" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://instagram.com/tausif1337" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://facebook.com/tausif1337" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
           </div>
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
