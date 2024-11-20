@@ -32,11 +32,11 @@ const Achievements = () => {
   const achievements = [
     {
       name: "DIU App Contest 2017",
-      description: "Developed AR Doctor, an Augmented Reality-based system for facial analysis and skin disease detection."
+      description: "Awarded 2nd Runner-Up for developing AR Doctor, an Augmented Reality-based system for facial analysis and skin disease detection."
     },
     {
       name: "IUB Annual SECS Awards 2017",
-      description: "Recognized for outstanding project development and contributions."
+      description: "Awarded for outstanding project development and contributions."
     },
   ];
 

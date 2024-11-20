@@ -9,6 +9,12 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
   background-color: #fff;
   padding: 20px;
   border-radius: 16px;
@@ -20,6 +26,8 @@
 .contact-info {
   flex: 1;
   padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s;
   background-color: #4e54c8;
   color: #fff;
   border-radius: 16px 0 0 16px;
