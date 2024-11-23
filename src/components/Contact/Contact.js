@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaPhone, FaWhatsapp, FaLinkedin, FaMapMarkerAlt, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaWhatsapp, FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 import './assets/styles/Contact.css';
 
 function Contact() {
