@@ -61,42 +61,6 @@ Follow these steps to set up and run the project locally:
 - Navigate through the portfolio using the links and buttons provided.
 - Click on project cards to view more detailed information about each project.
 
-## Folder Structure
-\`\`\`
-tausif1337.dev/
-│
-├── public/
-│   ├── index.html
-│   └── ...
-│
-├── src/
-│   ├── components/
-│   │   ├── Header.js
-│   │   ├── Hero.js
-│   │   ├── About.js
-│   │   ├── Skills.js
-│   │   ├── Experience.js
-│   │   ├── Projects.js
-│   │   └── Contact.js
-│   │
-│   ├── pages/
-│   │   ├── ImplantSupportSystem.js
-│   │   ├── SmartParkingSystem.js
-│   │   ├── FaceRecognitionAttendance.js
-│   │   ├── LabManagementSystem.js
-│   │   ├── ERPSystem.js
-│   │   └── CMSSystem.js
-│   │
-│   ├── assets/
-│   │   └── images/
-│   │
-│   ├── App.js
-│   ├── index.js
-│   └── styles.css
-│
-└── README.md
-\`\`\`
-
 ## Screenshots
 ### Home Page
 ![Home Page Screenshot](./assets/screenshots/homepage.png)
