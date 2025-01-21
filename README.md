@@ -8,9 +8,8 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Screenshots](#screenshots)
 - [License](#license)
+- [Contact](#contact)
 
 ## Overview
 This portfolio website is designed to highlight my professional experience and personal projects. It includes detailed project descriptions, skills, and contact information. Each project has its dedicated page for a deeper dive into the technologies and details.
