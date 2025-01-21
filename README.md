@@ -61,15 +61,6 @@ Follow these steps to set up and run the project locally:
 - Navigate through the portfolio using the links and buttons provided.
 - Click on project cards to view more detailed information about each project.
 
-## Screenshots
-### Home Page
-![Home Page Screenshot](./assets/screenshots/homepage.png)
-
-### Project Page Example
-![Project Page Screenshot](./assets/screenshots/project-page.png)
-
-*Note: Add your actual screenshots in the \`assets/screenshots\` directory.*
-
 ## License
 This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
 
