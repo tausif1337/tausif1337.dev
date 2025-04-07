@@ -16,6 +16,7 @@ import FaceRecognitionAttendance from "./pages/Project/FaceRecognitionAttendance
 import LabManagementSystem from "./pages/Project/LabManagementSystem";
 import ERPSystem from "./pages/Project/ERPSystem";
 import CMSSystem from "./pages/Project/CMSSystem";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import "./assets/styles/global.css";
 
 function App() {
@@ -47,6 +48,10 @@ function App() {
         <Route
           path="/implant-support-system"
           element={<ImplantSupportSystem />}
+        />
+        <Route
+          path="/privacy-policy"
+          element={<PrivacyPolicy />}
         />
         <Route path="/smart-parking-system" element={<SmartParkingSystem />} />
         <Route
