@@ -67,42 +67,44 @@ function Projects() {
     }
   ];
 
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
+  const [activeTab, setActiveTab] = useState("All");
   const categories = ["All", ...new Set(projectData.map(project => project.category))];
 
-  const filteredProjects = selectedCategory === "All" 
+  const filteredProjects = activeTab === "All" 
     ? projectData 
-    : projectData.filter(project => project.category === selectedCategory);
+    : projectData.filter(project => project.category === activeTab);
 
   return (
     <section id="projects" className="section">
       <h2>Projects</h2>
-      <div className="category-filter">
-        <label htmlFor="category-select">Filter by Category: </label>
-        <select 
-          id="category-select" 
-          value={selectedCategory} 
-          onChange={e => setSelectedCategory(e.target.value)}
-        >
-          {categories.map((category, index) => (
-            <option key={index} value={category}>{category}</option>
-          ))}
-        </select>
+      
+      <div className="project-tabs">
+        {categories.map((category, index) => (
+          <span
+            key={index}
+            className={`category-tag${activeTab === category ? ' active' : ''}`}
+            onClick={() => setActiveTab(category)}
+          >
+            {category}
+          </span>
+        ))}
       </div>
 
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <div className="project-card" key={index}>
-            <img src={project.imageUrl} alt={project.title} className="project-image" />
+            <div className="project-image-container">
+              <img src={project.imageUrl} alt={project.title} className="project-image" />
+              <div className="project-category">{project.category}</div>
+            </div>
             <div className="project-content">
               <h3>{project.title}</h3>
-              <p><strong>Tech Used:</strong> {project.techUsed}</p>
+              <p className="project-tech">{project.techUsed}</p>
               <p className="project-description">{project.description}</p>
-              <p><strong>Associated With:</strong> {project.associatedWith}</p>
-              <div className="project-links">
+              <div className="project-footer">
+                <span className="project-company">{project.associatedWith}</span>
                 <Link to={project.pageLink} className="project-link">
-                  <FaExternalLinkAlt /> Project Details
+                  <FaExternalLinkAlt /> Details
                 </Link>
               </div>
             </div>
